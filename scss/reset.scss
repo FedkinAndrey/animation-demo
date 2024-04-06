@@ -1,0 +1,62 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  user-select: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+a {
+  &:where(:visited) {
+    color: inherit;
+  }
+
+  &:active,
+  &:hover {
+    outline: none;
+  }
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+select,
+option {
+  font: inherit;
+  outline: none;
+}
+
+img {
+  &::selection {
+    background: transparent;
+  }
+}
